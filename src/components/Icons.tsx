@@ -6,16 +6,17 @@ import { HStack, IconButton, Link } from "@chakra-ui/react";
 
 interface Props {
   gap: number;
+  size: string;
 }
 
-const Icons = ({ gap }: Props) => {
+const Icons = ({ gap, size }: Props) => {
   return (
-    <HStack gap={gap} flexWrap={"wrap"}>
+    <HStack gap={gap} flexWrap={"wrap"} justifyContent={"center"}>
       <Link href="tel:+4917662948021">
         <IconButton
           bgColor="#007f80"
           aria-label="Call"
-          size="lg"
+          size={size}
           icon={<FaPhoneAlt />}
         />
       </Link>
@@ -23,7 +24,7 @@ const Icons = ({ gap }: Props) => {
         <IconButton
           bgColor="#007f80"
           aria-label="Email"
-          size="lg"
+          size={size}
           icon={<IoMailSharp />}
         />
       </Link>
@@ -31,7 +32,7 @@ const Icons = ({ gap }: Props) => {
         <IconButton
           bgColor="#25D366"
           aria-label="Whatsapp"
-          size="lg"
+          size={size}
           icon={<IoLogoWhatsapp />}
         />
       </Link>
@@ -39,7 +40,7 @@ const Icons = ({ gap }: Props) => {
         <IconButton
           bgColor="#24A1DE"
           aria-label="Telegram"
-          size="lg"
+          size={size}
           icon={<BiLogoTelegram />}
         />
       </Link>

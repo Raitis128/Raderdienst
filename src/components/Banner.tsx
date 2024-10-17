@@ -40,7 +40,7 @@ const Banner = ({ slides }: Props) => {
               <Image
                 src={slide.image}
                 alt={slide.title}
-                height={"700px"}
+                height={"800px"}
                 width={"100%"}
                 objectFit={"cover"}
               />
@@ -55,7 +55,7 @@ const Banner = ({ slides }: Props) => {
                 justifyContent="center"
               >
                 <Heading as="h1" size="xl">
-                  Professionelle Reifenreparatur – Schnell, Zuverlässig und
+                  Professionelle Reifenservice – Schnell, Zuverlässig und
                   Preiswert
                 </Heading>
               </Flex>

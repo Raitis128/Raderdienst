@@ -3,6 +3,8 @@ import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import bannerslides from "./data/banner";
+import "./app.css";
+import PhoneSection from "./components/PhoneSection";
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Navigation />
       <Banner slides={bannerslides} />
       <Contacts />
+      <PhoneSection />
       <Footer />
     </>
   );

@@ -30,7 +30,9 @@ const Navigation = () => {
           <Link _hover={{ color: "blue.100" }}>Link</Link>
           <Link _hover={{ color: "blue.100" }}>Link</Link>
           <Link _hover={{ color: "blue.100" }}>Link</Link>
-          <Link _hover={{ color: "blue.100" }}>Kontakt</Link>
+          <Link href="#contact" _hover={{ color: "blue.100" }}>
+            Kontakt
+          </Link>
         </Flex>
       </HStack>
     </nav>
