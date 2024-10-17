@@ -1,4 +1,7 @@
 import Banner from "./components/Banner";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
+import Map from "./components/Map";
 import Navigation from "./components/Navigation";
 
 function App() {
@@ -6,6 +9,9 @@ function App() {
     <>
       <Navigation />
       <Banner />
+      <Contacts />
+      <Map width={"100%"} height={300}/>
+      <Footer />
     </>
   );
 }

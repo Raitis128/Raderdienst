@@ -3,22 +3,37 @@ import logo from "../assets/logo1.svg";
 
 const Navigation = () => {
   return (
-    <HStack justifyContent="space-between" p={3} backgroundColor={"blue.900"}>
-      <Link href="#">
-        <Image
-          src={logo}
-          width="200px"
-          alt="logo"
+    <nav>
+      <HStack
+        justifyContent="space-between"
+        pt={5}
+        pb={5}
+        pl={10}
+        pr={10}
+        backgroundColor={"blue.900"}
+        fontFamily={"Roboto"}
+      >
+        <Link href="#">
+          <Image
+            src={logo}
+            width="200px"
+            alt="logo"
+            justifyContent="space-between"
+          />
+        </Link>
+        <Flex
           justifyContent="space-between"
-        />
-      </Link>
-      <Flex justifyContent="space-between" gap={10} fontSize={23} pr={5}>
-        <Link _hover={{ color: "blue.100" }}>Link</Link>
-        <Link _hover={{ color: "blue.100" }}>Link</Link>
-        <Link _hover={{ color: "blue.100" }}>Link</Link>
-        <Link _hover={{ color: "blue.100" }}>Link</Link>
-      </Flex>
-    </HStack>
+          gap={10}
+          fontSize={20}
+          textTransform={"uppercase"}
+        >
+          <Link _hover={{ color: "blue.100" }}>Link</Link>
+          <Link _hover={{ color: "blue.100" }}>Link</Link>
+          <Link _hover={{ color: "blue.100" }}>Link</Link>
+          <Link _hover={{ color: "blue.100" }}>Kontakt</Link>
+        </Flex>
+      </HStack>
+    </nav>
   );
 };
 

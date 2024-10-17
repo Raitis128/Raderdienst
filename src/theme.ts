@@ -1,6 +1,5 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 import "@fontsource/roboto";
-import "@fontsource/raleway";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -25,7 +24,7 @@ const theme = extendTheme({
   },
   fonts: {
     heading: `'Roboto', sans-serif`,
-    body: `'Raleway', sans-serif`,
+    body: `'Roboto', sans-serif`,
   },
 });
 
