@@ -28,10 +28,10 @@ const Contacts = () => {
         alignItems={"center"}
         direction={["column", "column", "row"]}
       >
-        <Map width={"500px"} height={600} />
+        <Map width={"600px"} height={600} />
 
         <Card bgColor={"blue.900"} p={10}>
-          <Heading as={"h3"} pb={5} color={"#fe4e4e"}>
+          <Heading as={"h3"} pb={5} color={"#fe4e4e"} fontSize={"2xl"}>
             Kontaktinformationen
           </Heading>
           <Text pb={5} textAlign={"justify"} maxWidth={"500px"}>
@@ -40,12 +40,10 @@ const Contacts = () => {
             RÄDERDIENST genau richtig!
           </Text>
           <HStack pb={5}>
-            <Text fontWeight={"bold"} color="#fe4e4e">
-              Address:
-            </Text>
+            <Text color="#fe4e4e">Address:</Text>
             <Text>Bergstraße 16, 01896 Ohorn, Germany</Text>
           </HStack>
-          <Text fontWeight={"bold"} pb={1} color="#fe4e4e">
+          <Text pb={1} color="#fe4e4e">
             Öffnungszeiten:
           </Text>
           <Stack pb={5}>
@@ -57,7 +55,12 @@ const Contacts = () => {
             <Text>Dienstag 16–21 Uhr</Text>
             <Text>Mittwoch 16–21 Uhr</Text>
           </Stack>
-          <Text pb={5}>Terminvereinbarung auf Anfrage</Text>
+          <Text pb={5} fontWeight={"bold"}>
+            Terminvereinbarung auf Anfrage
+          </Text>
+          <Heading as={"h3"} fontSize={"2xl"} pb={5} color={"#fe4e4e"}>
+            Kontaktieren Sie mich gerne
+          </Heading>
           <Icons gap={5} />
         </Card>
       </Flex>

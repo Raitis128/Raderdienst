@@ -1,23 +1,67 @@
-import { Flex, Heading, HStack } from "@chakra-ui/react";
-import bannerImage from "../assets/images/tire3.jpg";
+import { Flex, Heading, HStack, Image } from "@chakra-ui/react";
+import { Navigation, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Global } from "@emotion/react";
 
-const Banner = () => {
+type Slide = {
+  image: string;
+  title: string;
+};
+
+interface Props {
+  slides: Slide[];
+}
+
+const Banner = ({ slides }: Props) => {
   return (
     <header>
-      <HStack
-        backgroundImage={bannerImage}
-        bgRepeat={"no-repeat"}
-        bgPos={"center"}
-        bgSize={"cover"}
-        height="600px"
-        alignItems="flex-end"
-        justifyContent="center"
-      >
-        <Flex bgColor={"rgba(6, 70, 72, 0.7)"} p={5}>
-          <Heading as="h1" size="xl" opacity={1}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </Heading>
-        </Flex>
+      <Global
+        styles={`
+          .swiper-button-next, .swiper-button-prev {
+            color: #24e4e5; /* blue.900 */
+          }
+        `}
+      />
+
+      <HStack bgColor={"blue.800"}>
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation={true}
+          autoplay={{ delay: 5000 }}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          {slides.map((slide) => (
+            <SwiperSlide key={slide.image} style={{ position: "relative" }}>
+              <Image
+                src={slide.image}
+                alt={slide.title}
+                height={"700px"}
+                width={"100%"}
+                objectFit={"cover"}
+              />
+              <Flex
+                position="absolute"
+                bottom={0}
+                left={0}
+                width="100%"
+                bgColor={"rgba(0, 27, 28, 0.7)"}
+                color="white"
+                p={5}
+                justifyContent="center"
+              >
+                <Heading as="h1" size="xl">
+                  Professionelle Reifenreparatur – Schnell, Zuverlässig und
+                  Preiswert
+                </Heading>
+              </Flex>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </HStack>
     </header>
   );
