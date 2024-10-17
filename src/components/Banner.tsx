@@ -1,4 +1,4 @@
-import { Heading, HStack } from "@chakra-ui/react";
+import { Flex, Heading, HStack } from "@chakra-ui/react";
 import bannerImage from "../assets/images/tire3.jpg";
 
 const Banner = () => {
@@ -8,13 +8,15 @@ const Banner = () => {
       bgRepeat={"no-repeat"}
       bgPos={"center"}
       bgSize={"cover"}
-      height="700px"
+      height="600px"
       alignItems="flex-end"
       justifyContent="center"
     >
-      <Heading as="h1" size="xl" bgColor={"blue.800"} p={5} opacity={0.8}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </Heading>
+      <Flex bgColor={"rgba(6, 70, 72, 0.7)"} p={5}>
+        <Heading as="h1" size="xl" opacity={1}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </Heading>
+      </Flex>
     </HStack>
   );
 };
