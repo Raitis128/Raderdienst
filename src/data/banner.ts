@@ -1,6 +1,6 @@
-import imageOne from "../assets/images/tire1.jpg";
-import imageTwo from "../assets/images/tire2.jpg";
-import imageThree from "../assets/images/tire3.jpg";
+import imageOne from "../assets/images/banner/tire1.jpg";
+import imageTwo from "../assets/images/banner/tire2.jpg";
+import imageThree from "../assets/images/banner/tire3.jpg";
 
 export default [
   {

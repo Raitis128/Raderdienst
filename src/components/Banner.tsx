@@ -28,7 +28,7 @@ const Banner = ({ slides }: Props) => {
       <HStack bgColor={"blue.800"}>
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={50}
+          spaceBetween={20}
           slidesPerView={1}
           navigation={true}
           autoplay={{ delay: 5000 }}
@@ -49,7 +49,7 @@ const Banner = ({ slides }: Props) => {
                 bottom={0}
                 left={0}
                 width="100%"
-                bgColor={"rgba(0, 27, 28, 0.7)"}
+                bgColor={"rgba(0, 27, 28, 0.6)"}
                 color="white"
                 p={5}
                 justifyContent="center"

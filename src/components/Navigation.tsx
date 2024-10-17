@@ -27,9 +27,9 @@ const Navigation = () => {
           fontSize={20}
           textTransform={"uppercase"}
         >
-          <Link _hover={{ color: "blue.100" }}>Link</Link>
-          <Link _hover={{ color: "blue.100" }}>Link</Link>
-          <Link _hover={{ color: "blue.100" }}>Link</Link>
+          <Link href="#services" _hover={{ color: "blue.100" }}>
+            Leistungen
+          </Link>
           <Link href="#contact" _hover={{ color: "blue.100" }}>
             Kontakt
           </Link>

@@ -5,14 +5,16 @@ import Navigation from "./components/Navigation";
 import bannerslides from "./data/banner";
 import "./app.css";
 import PhoneSection from "./components/PhoneSection";
+import Services from "./components/Services";
 
 function App() {
   return (
     <>
       <Navigation />
       <Banner slides={bannerslides} />
-      <Contacts />
       <PhoneSection />
+      <Services />
+      <Contacts />
       <Footer />
     </>
   );
