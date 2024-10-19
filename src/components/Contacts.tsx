@@ -5,7 +5,7 @@ import Icons from "./Icons";
 const Contacts = () => {
   return (
     <Flex direction={["column", "column", "row"]} id="contact">
-      <Map width={"100%"} height={"90vh"} />
+      <Map width={"100%"} />
 
       <Card
         bgGradient={"linear(to-r, blue.900, blue.800)"}

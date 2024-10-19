@@ -30,6 +30,9 @@ const Navigation = () => {
           <Link href="#services" _hover={{ color: "blue.100" }}>
             Leistungen
           </Link>
+          <Link href="#faq" _hover={{ color: "blue.100" }}>
+            FAQ
+          </Link>
           <Link href="#contact" _hover={{ color: "blue.100" }}>
             Kontakt
           </Link>

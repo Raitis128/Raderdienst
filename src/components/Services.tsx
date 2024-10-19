@@ -39,7 +39,7 @@ const Services = () => {
         Unsere Leistungen
       </Heading>
       <Tabs variant="soft-rounded" colorScheme="green">
-        <TabList justifyContent="center" pb={10} gap={5}>
+        <TabList justifyContent="center" pb={10} gap={5} flexWrap={"wrap"}>
           {services.map((service, index) => (
             <Tab
               key={index}
