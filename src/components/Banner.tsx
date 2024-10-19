@@ -53,6 +53,7 @@ const Banner = ({ slides }: Props) => {
                 bgColor={"rgba(0, 27, 28, 0.6)"}
                 color="white"
                 p={5}
+                pb={10}
                 justifyContent="center"
               >
                 <Heading as="h1" size="xl" textAlign={"center"}>

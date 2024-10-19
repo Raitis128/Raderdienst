@@ -6,11 +6,13 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Tab,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
+  Text,
 } from "@chakra-ui/react";
 import services from "../data/services";
 
@@ -66,13 +68,37 @@ const Services = () => {
                 alignItems="center"
                 justifyContent="center"
                 flexDirection={{ base: "column", lg: "row" }}
+                position="relative"
               >
-                <Image
-                  src={service.image}
-                  alt={service.heading}
-                  boxSize={{ base: "500px" }}
-                  objectFit="cover"
-                />
+                <Box position="relative">
+                  <Image
+                    src={service.image}
+                    alt={service.heading}
+                    boxSize={{ base: "500px" }}
+                    objectFit="cover"
+                    borderRadius={5}
+                  />
+                  <Text
+                    position="absolute"
+                    bottom="10px"
+                    right="10px"
+                    fontSize="sm"
+                    color="gray.300"
+                    bg="rgba(0, 0, 0, 0.5)"
+                    p={1}
+                    borderRadius="md"
+                  >
+                    Designed by{" "}
+                    <Link
+                      href="https://www.freepik.com/popular-photos"
+                      color={"blue.300"}
+                      rel="noopener noreferrer"
+                      isExternal
+                    >
+                      Freepik
+                    </Link>
+                  </Text>
+                </Box>
                 <Card
                   bgColor={"blue.900"}
                   p={5}
