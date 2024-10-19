@@ -38,7 +38,7 @@ const Faq = ({ faq }: Props) => {
         alignItems={"center"}
       >
         {faq.map(({ question, answer }) => (
-          <AccordionItem bgColor={"blue.800"} key={question} width={"80%"}>
+          <AccordionItem bgColor={"blue.800"} key={question} width={"90%"}>
             <h2>
               <AccordionButton>
                 <Box as="span" flex="1" textAlign="left" fontSize={"lg"}>

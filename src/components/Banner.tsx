@@ -54,7 +54,7 @@ const Banner = ({ slides }: Props) => {
                 p={5}
                 justifyContent="center"
               >
-                <Heading as="h1" size="xl">
+                <Heading as="h1" size="xl" textAlign={"center"}>
                   Professionelle Reifenservice – Schnell, Zuverlässig und
                   Preiswert
                 </Heading>

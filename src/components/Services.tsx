@@ -65,11 +65,12 @@ const Services = () => {
                 gap={10}
                 alignItems="center"
                 justifyContent="center"
+                flexDirection={{ base: "column", lg: "row" }}
               >
                 <Image
                   src={service.image}
                   alt={service.heading}
-                  boxSize="500px"
+                  boxSize={{ base: "500px" }}
                   objectFit="cover"
                 />
                 <Card

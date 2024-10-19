@@ -5,12 +5,12 @@ import Icons from "./Icons";
 const Contacts = () => {
   return (
     <Flex direction={["column", "column", "row"]} id="contact">
-      <Map width={"100%"} />
+      <Map />
 
       <Card
         bgGradient={"linear(to-r, blue.900, blue.800)"}
         p={10}
-        width={"50%"}
+        width={["100%", "100%", "50%"]}
         textAlign={"center"}
         justifyContent={"center"}
         borderRadius={0}
@@ -26,7 +26,7 @@ const Contacts = () => {
           reparieren lassen? Dann sind Sie bei den Kfz-Mechanikern von
           RÄDERDIENST genau richtig!
         </Text>
-        <HStack pb={5} justifyContent={"center"}>
+        <HStack pb={5} justifyContent={"center"} flexWrap={"wrap"}>
           <Text color="red.300">Address:</Text>
           <Text>Bergstraße 16, 01896 Ohorn, Germany</Text>
         </HStack>

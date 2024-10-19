@@ -11,7 +11,7 @@ const PhoneSection = () => {
       gap={5}
     >
       <MdPhoneInTalk size={100} />
-      <Text fontSize={"3xl"} maxW={"50%"} textAlign={"center"}>
+      <Text fontSize={"3xl"} maxW={"90%"} textAlign={"center"}>
         Möchten Sie einen Termin zur Unfallinstandsetzung Ihres Fahrzeugs mit
         unserer freien Kfz-Werkstatt vereinbaren?
       </Text>
@@ -21,7 +21,7 @@ const PhoneSection = () => {
         borderRadius={10}
         _hover={{ bgColor: "red.600" }}
       >
-        <Button size="lg" >Anrufen</Button>
+        <Button size="lg">Anrufen</Button>
       </Link>
     </Flex>
   );
