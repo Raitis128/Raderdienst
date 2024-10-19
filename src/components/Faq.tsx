@@ -19,7 +19,7 @@ interface Props {
 
 const Faq = ({ faq }: Props) => {
   return (
-    <Box id="faq" bgColor={"blue.900"} p={10}>
+    <Box id="faq" bgColor={"blue.900"}>
       <Heading
         as={"h2"}
         textAlign={"center"}

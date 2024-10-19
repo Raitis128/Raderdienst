@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
-import logo from "../assets/logo1.svg";
+import logo from "../assets/logo2.svg";
 
 const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

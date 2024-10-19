@@ -1,16 +1,30 @@
-import { Card, Flex, Heading, HStack, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  Flex,
+  Heading,
+  HStack,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import Map from "./Map";
 import Icons from "./Icons";
 
 const Contacts = () => {
   return (
-    <Flex direction={["column", "column", "row"]} id="contact">
-      <Map />
+    <Flex
+      direction={["column", "column", "row"]}
+      id="contact"
+      alignItems="stretch"
+    >
+      <Box display={"block"} width={["100%", "100%", "50%"]}>
+        <Map />
+      </Box>
 
       <Card
+        flex={1}
         bgGradient={"linear(to-r, blue.900, blue.800)"}
         p={10}
-        width={["100%", "100%", "50%"]}
         textAlign={"center"}
         justifyContent={"center"}
         borderRadius={0}

@@ -1,4 +1,4 @@
-import { Flex, Heading, HStack, Image } from "@chakra-ui/react";
+import { Flex, Heading, HStack, Image, Link, Text } from "@chakra-ui/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -44,6 +44,7 @@ const Banner = ({ slides }: Props) => {
                 width={"100%"}
                 objectFit={"cover"}
               />
+
               <Flex
                 position="absolute"
                 bottom={0}
@@ -58,6 +59,22 @@ const Banner = ({ slides }: Props) => {
                   Professionelle Reifenservice – Schnell, Zuverlässig und
                   Preiswert
                 </Heading>
+                <Text
+                  position="absolute"
+                  bottom="10px"
+                  right="10px"
+                  fontSize="sm"
+                  color="gray.300"
+                >
+                  Designed by{" "}
+                  <Link
+                    href="https://www.freepik.com/popular-photos"
+                    color={"blue.300"}
+                    isExternal
+                  >
+                    Freepik
+                  </Link>
+                </Text>
               </Flex>
             </SwiperSlide>
           ))}
