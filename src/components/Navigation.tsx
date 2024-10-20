@@ -41,14 +41,15 @@ const Navigation = () => {
         backgroundColor={"blue.900"}
         fontFamily={"Roboto"}
       >
-        <Link href="#">
+        <RouterLink to="/">
           <Image
             src={logo}
             width="200px"
             alt="logo"
             justifyContent="space-between"
+            cursor="pointer"
           />
-        </Link>
+        </RouterLink>
 
         <Flex
           justifyContent="space-between"

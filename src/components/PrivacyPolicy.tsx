@@ -63,29 +63,6 @@ const PrivacyPolicy = () => {
         </UnorderedList>
 
         <Heading as={"h3"} pt={5} pb={5} fontSize={"2xl"} color={"red.300"}>
-          2. Rechte der Nutzer:
-        </Heading>
-        <UnorderedList>
-          <ListItem>
-            Auskunft, Berichtigung, Löschung: Sie haben jederzeit das Recht auf
-            Informationen über die gespeicherten Daten sowie deren Korrektur
-            oder Löschung.
-          </ListItem>
-          <ListItem>
-            Widerruf der Einwilligung: Sie können Ihre Einwilligung zur
-            Datenverarbeitung jederzeit widerrufen.
-          </ListItem>
-          <ListItem>
-            Widerspruchsrecht: Gegen die Verarbeitung für Direktwerbung oder
-            besondere Situationen können Sie Widerspruch einlegen.
-          </ListItem>
-          <ListItem>
-            Beschwerderecht: Bei Verstößen gegen die Datenschutz-Grundverordnung
-            (DSGVO) können Sie sich an eine Aufsichtsbehörde wenden.
-          </ListItem>
-        </UnorderedList>
-
-        <Heading as={"h3"} pt={5} pb={5} fontSize={"2xl"} color={"red.300"}>
           3. Datenverarbeitung durch Drittanbieter:
         </Heading>
         <UnorderedList>
@@ -115,8 +92,8 @@ const PrivacyPolicy = () => {
         </Heading>
         <UnorderedList>
           <ListItem>
-            Google Web Fonts Diese Seite nutzt zur einheitlichen Darstellung von
-            Schriftarten sogenannte Web Fonts, die von Google bereitgestellt
+            Google Web Fonts: Diese Seite nutzt zur einheitlichen Darstellung
+            von Schriftarten sogenannte Web Fonts, die von Google bereitgestellt
             werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu
             Servern von Google findet dabei nicht statt. Weitere Informationen
             zu Google Web Fonts finden Sie unter
@@ -125,18 +102,18 @@ const PrivacyPolicy = () => {
             https://policies.google.com/privacy.
           </ListItem>
           <ListItem>
-            Google Maps Diese Seite nutzt den Kartendienst Google Maps. Anbieter
-            ist die Google Ireland Limited („Google“), Gordon House, Barrow
-            Street, Dublin 4, Irland. Zur Nutzung der Funktionen von Google Maps
-            ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen
-            werden in der Regel an einen Server von Google in den USA übertragen
-            und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss
-            auf diese Datenübertragung. Die Nutzung von Google Maps erfolgt im
-            Interesse einer ansprechenden Darstellung unserer Online-Angebote
-            und an einer leichten Auffindbarkeit der von uns auf der Website
-            angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne
-            von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine entsprechende
-            Einwilligung abgefragt wurde, erfolgt die Verarbeitung
+            Google Maps: Diese Seite nutzt den Kartendienst Google Maps.
+            Anbieter ist die Google Ireland Limited („Google“), Gordon House,
+            Barrow Street, Dublin 4, Irland. Zur Nutzung der Funktionen von
+            Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese
+            Informationen werden in der Regel an einen Server von Google in den
+            USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat
+            keinen Einfluss auf diese Datenübertragung. Die Nutzung von Google
+            Maps erfolgt im Interesse einer ansprechenden Darstellung unserer
+            Online-Angebote und an einer leichten Auffindbarkeit der von uns auf
+            der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse
+            im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine
+            entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung
             ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25
             Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies
             oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B.
@@ -148,7 +125,25 @@ const PrivacyPolicy = () => {
             Einsatz von Drittanbietertools und -plugins erläutern, die auf einer
             Website eingebunden sind, wie beispielsweise Google Analytics,
             Social Media Plugins oder andere Dienste zur Verbesserung der
-            Funktionalität oder zur Analyse des Nutzerverhaltens.{" "}
+            Funktionalität oder zur Analyse des Nutzerverhaltens.
+          </ListItem>
+        </UnorderedList>
+
+        <Heading as={"h3"} pt={5} pb={5} fontSize={"2xl"} color={"red.300"}>
+          6. Verwendung von Bildern:
+        </Heading>
+        <UnorderedList>
+          <ListItem>
+            Die auf dieser Website verwendeten Bilder stammen von{" "}
+            <a
+              href="https://www.freepik.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#52ffff" }}
+            >
+              Freepik.com
+            </a>
+            .
           </ListItem>
         </UnorderedList>
 
