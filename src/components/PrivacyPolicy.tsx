@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
           Datenschutzerklärung
         </Heading>
         <Text>
-          Die Datenschutzerklärung der ROTENMANN beschreibt umfassend, wie
+          Die Datenschutzerklärung der RÄDERDIENST beschreibt umfassend, wie
           personenbezogene Daten verarbeitet werden, wenn Sie deren Website
           besuchen. Hier ist eine Übersicht der wichtigsten Punkte:
         </Text>
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
         </Heading>
         <UnorderedList>
           <ListItem>
-            Datenverantwortlicher: ROTENMANN ist für die Verarbeitung der Daten
+            Datenverantwortlicher: RÄDERDIENST ist für die Verarbeitung der Daten
             verantwortlich.
           </ListItem>
           <ListItem>
