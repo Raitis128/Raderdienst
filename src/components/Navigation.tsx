@@ -1,3 +1,4 @@
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import {
   Flex,
   HStack,
@@ -12,12 +13,22 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
-
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "../assets/logo2.svg";
 
 const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const navigate = useNavigate();
+
+  const handleNavigateToSection = (sectionId: string) => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 0);
+  };
 
   return (
     <nav>
@@ -46,14 +57,31 @@ const Navigation = () => {
           textTransform={"uppercase"}
           display={{ base: "none", md: "flex" }}
         >
-          <Link href="#services" _hover={{ color: "blue.100" }}>
+          <Link
+            onClick={() => handleNavigateToSection("services")}
+            _hover={{ color: "blue.100" }}
+          >
             Leistungen
           </Link>
-          <Link href="#faq" _hover={{ color: "blue.100" }}>
+          <Link
+            onClick={() => handleNavigateToSection("faq")}
+            _hover={{ color: "blue.100" }}
+          >
             FAQ
           </Link>
-          <Link href="#contact" _hover={{ color: "blue.100" }}>
+          <Link
+            onClick={() => handleNavigateToSection("contact")}
+            _hover={{ color: "blue.100" }}
+          >
             Kontakt
+          </Link>
+
+          <Link
+            as={RouterLink}
+            to="/datenschutz"
+            _hover={{ color: "blue.100" }}
+          >
+            Datenschutz­erklärung
           </Link>
         </Flex>
 
@@ -79,25 +107,40 @@ const Navigation = () => {
                 textTransform="uppercase"
               >
                 <Link
-                  href="#services"
-                  onClick={onClose}
+                  onClick={() => {
+                    handleNavigateToSection("services");
+                    onClose();
+                  }}
                   _hover={{ color: "blue.100" }}
                 >
                   Leistungen
                 </Link>
                 <Link
-                  href="#faq"
-                  onClick={onClose}
+                  onClick={() => {
+                    handleNavigateToSection("faq");
+                    onClose();
+                  }}
                   _hover={{ color: "blue.100" }}
                 >
                   FAQ
                 </Link>
                 <Link
-                  href="#contact"
-                  onClick={onClose}
+                  onClick={() => {
+                    handleNavigateToSection("contact");
+                    onClose();
+                  }}
                   _hover={{ color: "blue.100" }}
                 >
                   Kontakt
+                </Link>
+
+                <Link
+                  as={RouterLink}
+                  to="/datenschutz"
+                  onClick={onClose}
+                  _hover={{ color: "blue.100" }}
+                >
+                  Datenschutz­erklärung
                 </Link>
               </VStack>
             </DrawerBody>
