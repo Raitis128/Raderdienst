@@ -19,12 +19,17 @@ const Footer = () => {
       <Flex
         bgColor="blue.900"
         fontFamily={"Roboto"}
-        p={5}
+        pt={5}
+        pb={5}
+        pl={10}
+        pr={10}
         justifyContent={"space-between"}
         alignItems={"center"}
         flexWrap={"wrap"}
       >
-        <Text color="white" pb={5} pt={5} pr={5}>Copyright © 2024 RÄDERDIENST</Text>
+        <Text color="white" pb={5} pt={5} pr={5}>
+          Copyright © 2024 RÄDERDIENST
+        </Text>
 
         <Flex gap={5}>
           <Link
