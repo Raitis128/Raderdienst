@@ -11,31 +11,34 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import faq from "./data/faq";
 import bannerslides from "./data/banner";
 import Impressum from "./components/Impressum";
+import { Flex } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
+    <Flex direction={"column"} minH={"100vh"}>
       <Navigation />
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Banner slides={bannerslides} />
-              <PhoneSection />
-              <Services />
-              <Faq faq={faq} />
-              <Contacts />
-            </>
-          }
-        />
+      <Flex as="main" flex="1" direction="column" bgColor={"blue.800"}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Banner slides={bannerslides} />
+                <PhoneSection />
+                <Services />
+                <Faq faq={faq} />
+                <Contacts />
+              </>
+            }
+          />
+          <Route path="/datenschutz" element={<PrivacyPolicy />} />
+          <Route path="/impressum" element={<Impressum />} />
+        </Routes>
+      </Flex>
 
-        <Route path="/datenschutz" element={<PrivacyPolicy />} />
-        <Route path="/impressum" element={<Impressum />} />
-      </Routes>
       <Footer />
-    </>
+    </Flex>
   );
 }
 

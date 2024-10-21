@@ -22,8 +22,9 @@ const Footer = () => {
         p={5}
         justifyContent={"space-between"}
         alignItems={"center"}
+        flexWrap={"wrap"}
       >
-        <Text color="white">Copyright © 2024 RÄDERDIENST</Text>
+        <Text color="white" pb={5} pt={5} pr={5}>Copyright © 2024 RÄDERDIENST</Text>
 
         <Flex gap={5}>
           <Link
