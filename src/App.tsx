@@ -10,6 +10,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 
 import faq from "./data/faq";
 import bannerslides from "./data/banner";
+import Impressum from "./components/Impressum";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         />
 
         <Route path="/datenschutz" element={<PrivacyPolicy />} />
+        <Route path="/impressum" element={<Impressum />} />
       </Routes>
       <Footer />
     </>

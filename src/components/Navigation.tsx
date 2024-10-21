@@ -76,14 +76,6 @@ const Navigation = () => {
           >
             Kontakt
           </Link>
-
-          <Link
-            as={RouterLink}
-            to="/datenschutz"
-            _hover={{ color: "blue.100" }}
-          >
-            Datenschutz­erklärung
-          </Link>
         </Flex>
 
         <IconButton
@@ -133,15 +125,6 @@ const Navigation = () => {
                   _hover={{ color: "blue.100" }}
                 >
                   Kontakt
-                </Link>
-
-                <Link
-                  as={RouterLink}
-                  to="/datenschutz"
-                  onClick={onClose}
-                  _hover={{ color: "blue.100" }}
-                >
-                  Datenschutz­erklärung
                 </Link>
               </VStack>
             </DrawerBody>
