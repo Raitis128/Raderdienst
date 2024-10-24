@@ -12,6 +12,7 @@ import faq from "./data/faq";
 import bannerslides from "./data/banner";
 import Impressum from "./components/Impressum";
 import { Flex } from "@chakra-ui/react";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <PhoneSection />
                 <Services />
                 <Faq faq={faq} />
+                <Partners />
                 <Contacts />
               </>
             }

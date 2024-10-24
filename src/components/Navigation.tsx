@@ -71,6 +71,12 @@ const Navigation = () => {
             FAQ
           </Link>
           <Link
+            onClick={() => handleNavigateToSection("partners")}
+            _hover={{ color: "blue.100" }}
+          >
+            Partner
+          </Link>
+          <Link
             onClick={() => handleNavigateToSection("contact")}
             _hover={{ color: "blue.100" }}
           >

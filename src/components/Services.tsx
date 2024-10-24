@@ -37,7 +37,7 @@ const Services = () => {
 
   return (
     <Box bgColor={"blue.800"} pt={10} id="services">
-      <Heading as={"h2"} textAlign={"center"} color="red.300" mb={10}>
+      <Heading as={"h2"} textAlign={"center"} color="red.300" mb={10} textTransform={"uppercase"}>
         Unsere Leistungen
       </Heading>
       <Tabs variant="soft-rounded" colorScheme="green">
