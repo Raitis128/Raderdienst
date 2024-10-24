@@ -1,4 +1,4 @@
-import { Flex, Text, Link } from "@chakra-ui/react";
+import { Flex, Text, Link, Image, HStack } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
         pb={5}
         pl={10}
         pr={10}
-        justifyContent={"space-between"}
+        justifyContent={{base: "center", md: "space-between"}}
         alignItems={"center"}
         flexWrap={"wrap"}
       >
@@ -31,21 +31,36 @@ const Footer = () => {
           Copyright © 2024 RÄDERDIENST
         </Text>
 
-        <Flex gap={5}>
-          <Link
-            onClick={handleDatenschutzClick}
-            color="white"
-            _hover={{ color: "blue.100" }}
-          >
-            Datenschutzerklärung
+        <Flex
+          gap={5}
+          alignItems={"center"}
+          flexWrap={"wrap"}
+          justifyContent={"center"}
+        >
+          <Link href="https://www.reifenleader.de/" target="_blank">
+            <Image
+              src="https://cdn.tiresleader.com/static/sites/reifenleader.de/img/banners/Banner_12.jpg"
+              alt="Reifenleader.de Montagepartnerstation"
+              height={"45px"}
+              pr={5}
+            />
           </Link>
-          <Link
-            onClick={handleImpressumClick}
-            color="white"
-            _hover={{ color: "blue.100" }}
-          >
-            Impressum
-          </Link>
+          <HStack gap={5}>
+            <Link
+              onClick={handleDatenschutzClick}
+              color="white"
+              _hover={{ color: "blue.100" }}
+            >
+              Datenschutzerklärung
+            </Link>
+            <Link
+              onClick={handleImpressumClick}
+              color="white"
+              _hover={{ color: "blue.100" }}
+            >
+              Impressum
+            </Link>
+          </HStack>
         </Flex>
       </Flex>
     </footer>

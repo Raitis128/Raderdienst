@@ -70,12 +70,7 @@ const Navigation = () => {
           >
             FAQ
           </Link>
-          <Link
-            onClick={() => handleNavigateToSection("partners")}
-            _hover={{ color: "blue.100" }}
-          >
-            Partner
-          </Link>
+
           <Link
             onClick={() => handleNavigateToSection("contact")}
             _hover={{ color: "blue.100" }}
@@ -105,6 +100,14 @@ const Navigation = () => {
                 fontSize={20}
                 textTransform="uppercase"
               >
+                <Link href="https://www.reifenleader.de/" target="_blank">
+                  <Image
+                    src="https://cdn.tiresleader.com/static/sites/reifenleader.de/img/banners/Banner_12.jpg"
+                    alt="Reifenleader.de Montagepartnerstation"
+                    height={"45px"}
+                    pr={5}
+                  />
+                </Link>
                 <Link
                   onClick={() => {
                     handleNavigateToSection("services");
