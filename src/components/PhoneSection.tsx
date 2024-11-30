@@ -12,7 +12,7 @@ const PhoneSection = () => {
     >
       <MdPhoneInTalk size={100} />
       <Text fontSize={"3xl"} maxW={"90%"} textAlign={"center"}>
-        Möchten Sie einen Termin zur Unfallinstandsetzung Ihres Fahrzeugs mit
+        Möchten Sie einen Termin zur Ihres Fahrzeugs mit
         unserer freien Kfz-Werkstatt vereinbaren?
       </Text>
       <Link
